@@ -5,6 +5,10 @@ export default {
     colors: {
       background: ["#1E2125"],
       textcolor: ["#E9DFCE"],
+      button: ["#FFFFFF"],
+    },
+    fontFamily: {
+      primary: ["Dancing Script", "cursive"],
     },
     extend: {},
   },

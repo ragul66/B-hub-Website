@@ -6,7 +6,7 @@ const TopNavbar = () => {
         <>
             <Header />
             <div className='sm: bg-background-0 sm: w-full sm: h-screen lg:bg-background-0 lg:w-full lg:h-screen'>
-                <div className='sm: text-textcolor-0 lg:text-2xl lg:text-textcolor-0'>B-Hub Consultancy & Services</div>
+                <div className='sm: text-textcolor-0 sm: font-primary lg:text-[100px] lg:font-primary lg:text-textcolor-0 lg:p-52'>B-Hub Consultancy & Services</div>
             </div>
 
         </>
