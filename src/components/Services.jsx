@@ -1,11 +1,6 @@
 
 
 const Services = () => {
-    const data = [
-        {
-
-        }
-    ]
     return (
         <>
         </>
