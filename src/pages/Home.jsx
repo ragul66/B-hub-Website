@@ -12,7 +12,7 @@ const Home = () => {
                 <TopNavbar />
                 <Services />
                 <Whatsapp />
-            </div >
+            </div>
         </>
     )
 }
