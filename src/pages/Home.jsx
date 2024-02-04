@@ -8,9 +8,11 @@ import Whatsapp from "../components/Whatsapp"
 const Home = () => {
     return (
         <>
-            <TopNavbar />
-            <Services />
-            <Whatsapp />
+            <div className='sm: bg-background-0 sm: w-full sm: h-screen  lg:bg-background-0 lg:w-full lg:h-screen '>
+                <TopNavbar />
+                <Services />
+                <Whatsapp />
+            </div >
         </>
     )
 }
