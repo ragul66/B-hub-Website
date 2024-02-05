@@ -1,59 +1,62 @@
-
-import webd from "../assets/webd.jpg"
-import adminimg from "../assets/adminimg.png"
-import mediaimg from "../assets/mediaimg.webp"
-import contentimg from "../assets/contentimg.jpg"
-// const Carousel = () => {
-//     return (
-//         <>
-//             <div className='sm: bg-background-0 sm: w-full sm: h-max  lg:bg-background-0 lg:w-full lg:h-max '>
-//                 <div className=" sm: text-textcolor-0 sm: font-primary sm: text-[25px] lg:text-textcolor-0 lg:font-primary lg:text-center lg:mt-48 lg:text-[50px]">Projects</div>
-//             </div>
-//         </>
-//     )
-// }
-
-// export default Carousel
-
-
-import { useState, useEffect } from 'react';
-// import './Carousel.css'; // Import your CSS file for styling
+import { useState, useEffect } from "react";
+import image1 from "../assets/webd.jpg";
+import image2 from "../assets/adminimg.png";
+import image3 from "../assets/contentimg.jpg";
 
 const Carousel = () => {
-    const [currentIndex, setCurrentIndex] = useState(0);
-    const images = [webd, adminimg, mediaimg, contentimg];
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrentIndex((prevIndex) =>
-                prevIndex === images.length - 1 ? 0 : prevIndex + 1
-            );
-        }, 3000);
+  const images = [image1, image2, image3];
 
-        return () => clearInterval(interval);
-    }, [images.length]);
-
-    const handlePrev = () => {
-        setCurrentIndex((prevIndex) =>
-            prevIndex === 0 ? images.length - 1 : prevIndex - 1
-        );
-    };
-
-    const handleNext = () => {
-        setCurrentIndex((prevIndex) =>
-            prevIndex === images.length - 1 ? 0 : prevIndex + 1
-        );
-    };
-
-    return (
-        <div className="carousel-container sm: bg-background-0 sm: w-full sm: h-max  lg:bg-background-0 lg:w-full lg:h-screen lg:mt-48">
-            <button onClick={handlePrev} className="prev-button">Previous</button>
-            <div className="image-container lg:width">
-                <img src={images[currentIndex]} alt={`Slide ${currentIndex + 1}`} />
-            </div>
-            <button onClick={handleNext} className="next-button">Next</button>
-        </div>
+  const updateContent = () => {
+    setCurrentImageIndex((prevIndex) =>
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1
     );
+  };
+
+  const switchImage = (index) => {
+    setCurrentImageIndex(index);
+  };
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      updateContent();
+    }, 5000);
+
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, [currentImageIndex]);
+
+  return (
+    <div className="relative w-full lg:mt-48">
+      <div onClick={updateContent}>
+        <div className="aspect-w-3 aspect-h-2">
+          <img
+            src={images[currentImageIndex]}
+            alt={`Image ${currentImageIndex + 1}`}
+            className="object-cover w-full h-full absolute cursor-pointer"
+          />
+        </div>
+        <div className="relative w-full h-[520px] flex items-center justify-center">
+          <div className="w-full px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20">
+            <div className="p-4 sm:p-8 md:p-12 lg:p-16 xl:p-20 text-center rounded-md"></div>
+          </div>
+        </div>
+      </div>
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+        {images.map((_, index) => (
+          <span
+            key={index}
+            onClick={() => switchImage(index)}
+            className={`w-3 h-3 rounded-full z-20 cursor-pointer hover:bg-background-0 ${
+              index === currentImageIndex ? "bg-background-0" : "bg-textcolor-0"
+            }`}
+          ></span>
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default Carousel;
