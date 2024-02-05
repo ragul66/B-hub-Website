@@ -21,13 +21,7 @@ import { useState, useEffect } from 'react';
 
 const Carousel = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
-    const images = [
-        { webd },
-        { adminimg },
-        { mediaimg },
-        { contentimg }
-        // Add more image URLs as needed
-    ];
+    const images = [webd, adminimg, mediaimg, contentimg];
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -52,9 +46,9 @@ const Carousel = () => {
     };
 
     return (
-        <div className="carousel-container sm: bg-background-0 sm: w-full sm: h-max  lg:bg-background-0 lg:w-full lg:h-screen">
+        <div className="carousel-container sm: bg-background-0 sm: w-full sm: h-max  lg:bg-background-0 lg:w-full lg:h-screen lg:mt-48">
             <button onClick={handlePrev} className="prev-button">Previous</button>
-            <div className="image-container">
+            <div className="image-container lg:width">
                 <img src={images[currentIndex]} alt={`Slide ${currentIndex + 1}`} />
             </div>
             <button onClick={handleNext} className="next-button">Next</button>
