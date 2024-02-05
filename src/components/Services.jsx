@@ -13,7 +13,7 @@ const Services = () => {
 
                 <div>
                     {/* <h1 className="lg:font-primary lg:text-textcolor-0 lg:text-[25px]">Web Development</h1> */}
-                    <img className="lg:w-[500px] lg:rounded-3xl lg:ml-[900px] lg:mt-12" src={webd} alt="image" />
+                    <img className="lg:w-[500px] lg:rounded-3xl lg:ml-[900px] lg:mt-12 lg:hover:shadow-inner lg:hover:bg-textcolor-0" src={webd} alt="image" />
                     <p className="lg:font-primary lg:text-textcolor-0 lg:-mt-44 lg:ml-8">Web development services encompass a range of activities involved in creating and maintaining websites and web applications which includes services <br /> like front-end development using React and back-end development using Node js we do both MERN and PERN stack development<br /> projects with Implementing security measures to protect sensitive data, ensuring secure transactions and user interactions also Regularly maintaining <br /> and updating websites to address security issues, improve performance, and fix bugs.</p>
                 </div>
 
@@ -30,8 +30,9 @@ const Services = () => {
                 </div>
 
                 <div>
-                    <img className="lg:w-[500px] lg:rounded-3xl lg:mt-48" src={contentimg} alt="image" />
-                    <p className="lg:font-primary lg:text-textcolor-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti rerum vitae doloremque quam dignissimos sunt, minus reiciendis unde ut ipsam et ab in. Cum, in corrupti accusamus molestias soluta voluptates.</p>
+                    <img className="lg:w-[500px] lg:rounded-3xl lg:mt-48 lg:ml-16" src={contentimg} alt="image" />
+                    <p className="lg:font-primary lg:text-textcolor-0 lg:ml-[750px] lg:-mt-44">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti rerum vitae doloremque quam dignissimos sunt,<br /> minus reiciendis unde ut ipsam et ab in. Cum, in corrupti accusamus molestias soluta voluptates.</p>
+                    {/* <p className="lg:font-primary lg:text-textcolor-0 lg:ml-[750px] lg:-mt-48">Carousel</p> */}
                 </div>
 
             </div>

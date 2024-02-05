@@ -1,4 +1,5 @@
 
+import Carousel from "../components/Carousel"
 import Services from "../components/Services"
 import TopNavbar from "../components/TopNavbar"
 import Whatsapp from "../components/Whatsapp"
@@ -12,6 +13,7 @@ const Home = () => {
                 <TopNavbar />
                 <Services />
                 <Whatsapp />
+                <Carousel />
             </div>
         </>
     )
