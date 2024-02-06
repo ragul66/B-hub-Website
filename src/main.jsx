@@ -5,6 +5,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import NoPage from "./pages/NoPage.jsx";
 import WelcomePage from "./pages/WelcomePage.jsx";
 import HomePage from "./pages/HomePage.jsx";
+import About from "./pages/About.jsx";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
     path: "*",
     element: <NoPage />,
   },
+  {
+    path: "/About",
+    element: <About />
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
