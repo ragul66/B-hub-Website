@@ -4,30 +4,41 @@ import "slick-carousel/slick/slick-theme.css";
 import 'react-awesome-slider/dist/custom-animations/cube-animation.css';
 import Marquee from "react-fast-marquee";
 import Header from '../components/Header'
+// Team images
+import gowtham from "../assets/gowtham.jpg";
+import yohitha from "../assets/yohitha.jpg";
+import sree from "../assets/sree.jpg";
+import Aravindh from "../assets/ARAVIND.jpg";
+import Ragul from "../assets/Ragul.jpg";
 import webd from "../assets/ARAVIND.jpg";
+// import Aravindh from "../assets/ARAVIND.jpg";
+// import Aravindh from "../assets/ARAVIND.jpg";
+// import Aravindh from "../assets/ARAVIND.jpg";
+// import Aravindh from "../assets/ARAVIND.jpg";
+// import Aravindh from "../assets/ARAVIND.jpg";
 
 const About = () => {
 
     const data = [
         {
-            img: webd,
-            heading: "Hello World!!"
+            img: gowtham,
+            heading: "Gowtham Raj.S"
         },
         {
-            img: webd,
-            heading: "Ragul vasanth"
+            img: yohitha,
+            heading: "Yohitha.S"
         },
         {
-            img: webd,
-            heading: "Ragul vasanth"
+            img: sree,
+            heading: "Sree Aranganathan.D"
         },
         {
-            img: webd,
-            heading: "Ragul vasanth"
+            img: Aravindh,
+            heading: "Aravindhan.U.D"
         },
         {
-            img: webd,
-            heading: "Ragul vasanth"
+            img: Ragul,
+            heading: "Ragul vasanth.S.M"
         },
         {
             img: webd,
@@ -75,11 +86,11 @@ const About = () => {
         }
     ]
 
-    const project = [
-        {
-            image: webd
-        }
-    ]
+    // const project = [
+    //     {
+    //         image: webd
+    //     }
+    // ]
     return (
         <>
             <div className='text-textcolor-0 bg-background-0 w-full h-max'>
@@ -115,7 +126,7 @@ const About = () => {
                                     <div className='  border-8 border-textcolor-0 w-fit rounded-bl-2xl rounded-tr-2xl mt-8  ease-in-out delay-150 bg-blue-500 hover:-translate-y-0 hover:scale-110 hover:bg-indigo-500 duration-300 transform transition-all'>
                                         <img className="p-2" src={d.img} />
                                         <h1 className="border-b-2 w-12"></h1>
-                                        <p className="text-center">{d.heading}</p>
+                                        <p className="text-center mb-2">{d.heading}</p>
                                     </div>
                                 </>
                             )))}
@@ -128,14 +139,14 @@ const About = () => {
                         <h1 className='text-center text-[70px]'>Projects</h1>
 
                         <div className=' space-x-5 grid grid-cols-4 p-4 animate-fade-up animate-once animate-fade-up'>
-                            {(project.map((d) => (
+                            {/* {(project.map((d) => (
                                 <>
                                     <div>
                                         <img className="p-2" src={d.image} />
 
                                     </div>
                                 </>
-                            )))}
+                            )))} */}
                         </div>
 
                     </div>
