@@ -1,7 +1,4 @@
 // import React from 'react'
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import 'react-awesome-slider/dist/custom-animations/cube-animation.css';
 import Marquee from "react-fast-marquee";
 import Header from '../components/Header'
 // Team images
@@ -11,11 +8,8 @@ import sree from "../assets/sree.jpg";
 import Aravindh from "../assets/ARAVIND.jpg";
 import Ragul from "../assets/Ragul.jpg";
 import webd from "../assets/ARAVIND.jpg";
-// import Aravindh from "../assets/ARAVIND.jpg";
-// import Aravindh from "../assets/ARAVIND.jpg";
-// import Aravindh from "../assets/ARAVIND.jpg";
-// import Aravindh from "../assets/ARAVIND.jpg";
-// import Aravindh from "../assets/ARAVIND.jpg";
+import kannadiyar from "../assets/kannadiyar.png";
+import Footer from "../components/Footer";
 
 const About = () => {
 
@@ -86,11 +80,12 @@ const About = () => {
         }
     ]
 
-    // const project = [
-    //     {
-    //         image: webd
-    //     }
-    // ]
+    const project = [
+        {
+            image: kannadiyar
+        }
+    ]
+
     return (
         <>
             <div className='text-textcolor-0 bg-background-0 w-full h-max'>
@@ -101,7 +96,7 @@ const About = () => {
                     <p className=' text-center text-[20px] ml-2 mr-2'><q>At B-Hub, we offer a range of professional services to meet various digital needs. We specialize in Web designing, Web development, and UI/UX design, combining creativity and technical skills to <br /> create visually appealing and highly functional solutions. Our expertise also extends to media works, where we focus on producing impactful visual content. Additionally, we actively collaborate on college projects, supporting the educational and professional growth of students. Whether you need a beautiful website, a seamless user experience, compelling media content, or assistance with academic projects, our dedicated team is committed to exceeding expectations and delivering excellence in every project.</q></p>
 
                     <div>
-                        <Marquee speed={300} gradient={false} className="mt-[81px] text-[200px]">
+                        <Marquee speed={300} gradient={false} className="mt-[85px] text-[200px]">
                             <div className="announcement">
                                 <div className="announcement-text text1">
                                     <span>Our vision is to be the trusted partner for businesses,  We aim to simplify complexity, empower growth, and ensure our clients stay ahead in the ever-evolving digital landscape,</span>
@@ -115,7 +110,7 @@ const About = () => {
                     {/* Team Mates Card */}
                     <div>
                         <div >
-                            <p className='text-center text-[30px] ml-12'>Create Positive Goals in your life & <br /> reach them as happy as you can</p>
+                            <p className='text-center text-[30px] ml-12 mt-12'>Create Positive Goals in your life & <br /> reach them as happy as you can</p>
                         </div>
 
                         <h1 className='text-center text-[70px] mt-12'>Our Team</h1>
@@ -137,20 +132,17 @@ const About = () => {
                     {/* Projects section starts */}
                     <div>
                         <h1 className='text-center text-[70px]'>Projects</h1>
-
-                        <div className=' space-x-5 grid grid-cols-4 p-4 animate-fade-up animate-once animate-fade-up'>
-                            {/* {(project.map((d) => (
-                                <>
-                                    <div>
-                                        <img className="p-2" src={d.image} />
-
-                                    </div>
-                                </>
-                            )))} */}
-                        </div>
+                        {(project.map((j) => (
+                            <>
+                                <div>
+                                    <img className=" mt-12 ml-[700px]" src={j.image} />
+                                </div>
+                            </>
+                        )))}
 
                     </div>
                     {/* Project Section Ends */}
+                    <Footer />
 
                 </div>
             </div>
