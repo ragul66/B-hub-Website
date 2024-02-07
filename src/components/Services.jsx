@@ -7,7 +7,7 @@ import contentimg from "../assets/contentimg.jpg";
 const Services = () => {
   return (
     <div className="services-container">
-      <div className="title lg:text-[200px] lg:text-textcolor-0 lg:text-center lg:mt-2">
+      <div className="title lg:text-[200px] lg:text-textcolor-0 lg:text-center">
         Services Provided
       </div>
 
@@ -44,7 +44,7 @@ const ServiceItem = ({ imgSrc, imgAlt, description, alignRight }) => {
   const imageClass = `lg:w-[500px] lg:rounded-3xl lg:mt-48 transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 transform transition-all hover:translate-x-4 ${alignRight ? "lg:ml-[900px]" : "lg:ml-16"
     }`;
 
-  const textClass = `lg:font-primary lg:text-textcolor-0 transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ${alignRight ? "lg:text-right lg:mr-28" : "lg:ml-[750px]"
+  const textClass = `lg:font-primary lg:text-textcolor-0 transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300    ${alignRight ? "lg:text-right lg:mr-28" : "lg:ml-[700px]"
     } lg:-mt-44`;
 
   return (

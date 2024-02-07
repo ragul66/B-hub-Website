@@ -1,8 +1,76 @@
-import React from 'react'
+// import React from 'react'
 import Marquee from "react-fast-marquee";
 import Header from '../components/Header'
+import webd from "../assets/ARAVIND.jpg";
 
 const About = () => {
+
+    const data = [
+        {
+            img: 'webd',
+            heading: "Hello World!!"
+        },
+        {
+            img: 'webd',
+            heading: "Ragul vasanth"
+        },
+        {
+            img: 'webd',
+            heading: "Ragul vasanth"
+        },
+        {
+            img: 'webd',
+            heading: "Ragul vasanth"
+        },
+        {
+            img: 'webd',
+            heading: "Ragul vasanth"
+        },
+        {
+            img: 'webd',
+            heading: "Ragul vasanth"
+        },
+        {
+            img: 'webd',
+            heading: "Ragul vasanth"
+        },
+        {
+            img: 'webd',
+            heading: "Ragul vasanth"
+        },
+        {
+            img: 'webd',
+            heading: "Ragul vasanth"
+        },
+        {
+            img: 'webd',
+            heading: "Ragul vasanth"
+        },
+        {
+            img: 'webd',
+            heading: "Ragul vasanth"
+        },
+        {
+            img: 'webd',
+            heading: "Ragul vasanth"
+        },
+        {
+            img: 'webd',
+            heading: "Ragul vasanth"
+        },
+        {
+            img: 'webd',
+            heading: "Ragul vasanth"
+        },
+        {
+            img: 'webd',
+            heading: "Ragul vasanth"
+        },
+        {
+            img: 'webd',
+            heading: "Ragul vasanth"
+        }
+    ]
     return (
         <>
             <div className='text-textcolor-0 bg-background-0 w-full h-max'>
@@ -25,7 +93,22 @@ const About = () => {
                     </div>
 
                     <div>
-                        <p className='text-left'>Create Positive Goals in your life & <br /> reach them as happy as you can</p>
+                        <div >
+                            <p className='text-center text-[30px] ml-12'>Create Positive Goals in your life & <br /> reach them as happy as you can</p>
+                        </div>
+
+                        <h1 className='text-center text-[70px] mt-12'>Our Team</h1>
+
+                        <div className=' space-x-5 grid grid-cols-4 p-4 animate-fade-up animate-once animate-fade-up'>
+                            {(data.map((d) => (
+                                <>
+                                    <div className='  border-2 border-textcolor-0 w-fit rounded-bl-2xl rounded-tr-2xl mt-8'>
+                                        <img className="p-2" src={webd} />
+                                        <p className="text-center">{d.heading}</p>
+                                    </div>
+                                </>
+                            )))}
+                        </div>
                     </div>
                 </div>
             </div>
