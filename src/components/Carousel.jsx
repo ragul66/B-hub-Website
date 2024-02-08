@@ -49,9 +49,8 @@ const Carousel = () => {
           <span
             key={index}
             onClick={() => switchImage(index)}
-            className={`w-3 h-3 rounded-full z-20 cursor-pointer hover:bg-background-0 ${
-              index === currentImageIndex ? "bg-background-0" : "bg-textcolor-0"
-            }`}
+            className={`w-3 h-3 rounded-full z-20 cursor-pointer hover:bg-background-0 ${index === currentImageIndex ? "bg-background-0" : "bg-textcolor-0"
+              }`}
           ></span>
         ))}
       </div>

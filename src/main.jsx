@@ -5,6 +5,8 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import NoPage from "./pages/NoPage.jsx";
 import WelcomePage from "./pages/WelcomePage.jsx";
 import HomePage from "./pages/HomePage.jsx";
+import About from "./pages/About.jsx";
+import Contact from "./pages/Contact.jsx";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +21,13 @@ const router = createBrowserRouter([
     path: "*",
     element: <NoPage />,
   },
+  {
+    path: "/About",
+    element: <About />
+  }, {
+    path: "/Contact",
+    element: <Contact />
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
