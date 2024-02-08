@@ -1,3 +1,72 @@
+import React from 'react'
+
+const Footer = () => {
+    return (
+        <>
+            <div className='lg:w-screen lg:h-max text-textcolor-0'>Footer</div>
+        </>
+    )
+}
+
+export default Footer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // import { useNavigate } from "react-router-dom";
 // import Whatsapp from "./Whatsapp";
 

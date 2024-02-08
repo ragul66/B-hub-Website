@@ -2,10 +2,16 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+@layer utilities {
+  .animate-fade-in-up {
+    animation: fade-in-up 0.5s ease-out;
+  }
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 40px;
 }
 
 .service-items-container {
@@ -15,8 +21,11 @@
 }
 
 .service-item {
-  width: 48%; /* Adjust as needed for spacing */
-  margin-bottom: 20px;
+  width: 50%; /* Adjust as needed for spacing */
+  margin-left: 0px;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  color: #e9dfce;
 }
 
 .service-item-image {
