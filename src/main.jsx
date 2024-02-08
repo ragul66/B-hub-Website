@@ -7,6 +7,7 @@ import WelcomePage from "./pages/WelcomePage.jsx";
 import HomePage from "./pages/HomePage.jsx";
 import About from "./pages/About.jsx";
 import Contact from "./pages/Contact.jsx";
+// nice da kolandhai
 
 const router = createBrowserRouter([
   {
