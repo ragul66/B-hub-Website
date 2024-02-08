@@ -1,5 +1,5 @@
 import Carousel from "../components/Carousel";
-import Footer from "../components/Footer";
+// import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Services from "../components/Services";
 import Title from "../components/Title";
@@ -14,7 +14,7 @@ const Home = () => {
         <Services />
         <Whatsapp />
         <Carousel />
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </>
   );

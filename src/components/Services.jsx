@@ -1,4 +1,3 @@
-import React from "react";
 import webd from "../assets/webd.jpg";
 import adminimg from "../assets/adminimg.png";
 import mediaimg from "../assets/mediaimg.webp";
@@ -40,7 +39,7 @@ const Services = () => {
   );
 };
 
-const ServiceItem = ({ imgSrc, imgAlt, description, alignRight }) => {
+const ServiceItem = (imgSrc, imgAlt, description, alignRight) => {
   const imageClass = `lg:w-[500px] lg:rounded-3xl lg:mt-48 transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 transform transition-all hover:translate-x-4 ${alignRight ? "lg:ml-[900px]" : "lg:ml-16"
     }`;
 
@@ -48,7 +47,7 @@ const ServiceItem = ({ imgSrc, imgAlt, description, alignRight }) => {
     } lg:-mt-44`;
 
   return (
-    <div className="service-item">
+    <div className="service-item animate-fade-in-up">
       <img className={imageClass} src={imgSrc} alt={imgAlt} />
       <p className={textClass}>{description}</p>
     </div>

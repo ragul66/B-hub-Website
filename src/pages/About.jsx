@@ -9,7 +9,7 @@ import Aravindh from "../assets/ARAVIND.jpg";
 import Ragul from "../assets/Ragul.jpg";
 import webd from "../assets/ARAVIND.jpg";
 import kannadiyar from "../assets/kannadiyar.png";
-import Footer from "../components/Footer";
+// import Footer from "../components/Footer";
 
 const About = () => {
 
@@ -109,24 +109,23 @@ const About = () => {
 
                     {/* Team Mates Card */}
                     <div>
-                        <div >
-                            <p className='text-center text-[30px] ml-12 mt-12'>Create Positive Goals in your life & <br /> reach them as happy as you can</p>
+                        <div>
+                            <p className='text-center text-[30px] ml-12 mt-12 animate-fade-up'>Create Positive Goals in your life & <br /> reach them as happy as you can</p>
                         </div>
 
                         <h1 className='text-center text-[70px] mt-12'>Our Team</h1>
 
-                        <div className=' space-x-6 grid grid-cols-4 grid-flow-row  p-6 animate-fade-up animate-once animate-fade-up'>
-                            {(data.map((d) => (
-                                <>
-                                    <div className='  border-8 border-textcolor-0 w-fit rounded-bl-2xl rounded-tr-2xl mt-8  ease-in-out delay-150 bg-blue-500 hover:-translate-y-0 hover:scale-110 hover:bg-indigo-500 duration-300 transform transition-all'>
-                                        <img className="p-2" src={d.img} />
-                                        <h1 className="border-b-2 w-12"></h1>
-                                        <p className="text-center mb-2">{d.heading}</p>
-                                    </div>
-                                </>
-                            )))}
+                        <div className='space-x-6 grid grid-cols-4 grid-flow-row p-6 animate-fade-in-up'>
+                            {data.map((d, index) => (
+                                <div key={index} className='border-8 border-textcolor-0 w-fit rounded-bl-2xl rounded-tr-2xl mt-8 ease-in-out delay-150 bg-blue-500 hover:-translate-y-0 hover:scale-110 hover:bg-indigo-500 duration-300 transform transition-all'>
+                                    <img className="p-2" src={d.img} alt={`Team member ${index + 1}`} />
+                                    <h1 className="border-b-2 w-12"></h1>
+                                    <p className="text-center mb-2">{d.heading}</p>
+                                </div>
+                            ))}
                         </div>
                     </div>
+
                     {/* Team Mates Card Ends */}
 
                     {/* Projects section starts */}
@@ -142,7 +141,7 @@ const About = () => {
 
                     </div>
                     {/* Project Section Ends */}
-                    <Footer />
+                    {/* <Footer /> */}
 
                 </div>
             </div>
