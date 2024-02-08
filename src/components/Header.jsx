@@ -12,7 +12,7 @@ const Header = () => {
       <p className="">
         <q>Strive not to be a success, but rather to be of value.</q>
       </p>
-      <a className="text-textcolor-0 rounded-lg p-1 bg-background-0 cursor-pointer" onClick={handleabout}>About</a>
+      <a className="text-textcolor-0 rounded-lg p-1 bg-background-0 cursor-pointer" onClick={handleabout}>ABOUT</a>
     </header>
   );
 };
