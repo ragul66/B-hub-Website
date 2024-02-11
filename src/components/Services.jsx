@@ -2,14 +2,78 @@ import webd from "../assets/webd.jpg";
 import adminimg from "../assets/adminimg.png";
 import mediaimg from "../assets/mediaimg.webp";
 import contentimg from "../assets/contentimg.jpg";
+// import f1 from '../assets/f1.jpg'
 import '../index.css'
 
 const Services = () => {
+
+
+  // const features = [
+  //   {
+  //     fimg: f1,
+  //     para1: "Web Development",
+  //     para2: "Crafting Digital Excellence:Where Ideas Become Interactive Realities!"
+  //   },
+  //   {
+  //     fimg: f1,
+  //     para1: "Admin Panel Creation",
+  //     para2: "Crafting Digital Excellence:Where Ideas Become Interactive Realities!"
+  //   },
+  //   {
+  //     fimg: f1,
+  //     para1: "Web Development",
+  //     para2: "Crafting Digital Excellence:Where Ideas Become Interactive Realities!"
+  //   },
+  //   {
+  //     fimg: f1,
+  //     para1: "Web Development",
+  //     para2: "Crafting Digital Excellence:Where Ideas Become Interactive Realities!"
+  //   },
+  //   {
+  //     fimg: f1,
+  //     para1: "Web Development",
+  //     para2: "Crafting Digital Excellence:Where Ideas Become Interactive Realities!"
+  //   },
+  //   {
+  //     fimg: f1,
+  //     para1: "Web Development",
+  //     para2: "Crafting Digital Excellence:Where Ideas Become Interactive Realities!"
+  //   }
+  // ]
+
+
   return (
     <div className="container">
+
+      {/* Features start  */}
+      {/* <div>
+        <div>
+          <h1 className="lg:text-[30px] lg:text-center lg:mt-4">AWESOME FEATURES</h1>
+          <h1 className="border-b-2 w-32 ml-[700px] text-gold-0 font-semibold"></h1>
+          <p className="text-center mt-3">"Beyond Expectations, Beyond Services: Crafting Excellence for You."</p>
+        </div>
+
+        <div className="space-x-4 lg:grid lg:grid-cols-3 lg:grid-flow-row ml-14 mr-12 mt-12">
+          {features.map((f) => (
+            <>
+              <div className="sm: border-2 lg:border-none    lg:mt-7">
+                <div className="flex flex-row">
+                  <img className="w-24 h-24 rounded-full" src={f.fimg} />
+                  <h1 className="mt-2 ml-4"><span className="text-gold-0 ">{f.para1}</span> <br />{f.para2}</h1>
+                  <p><q>{f.para2}</q></p>
+                </div>
+              </div >
+            </>
+          ))}
+        </div>
+      </div> */}
+
+      {/* Features end */}
+
       <div className="title lg:text-6xl lg:text-textcolor-0 lg:text-center lg:-mt-48 lg:text-[70px] lg:mb-48">
         Services Provided
       </div>
+
 
       <div className="service-items-container">
         <ServiceItem

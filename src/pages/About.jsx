@@ -3,6 +3,7 @@ import Marquee from "react-fast-marquee";
 import Header from '../components/Header'
 import about from '../assets/About.jpg'
 import f1 from '../assets/f1.jpg'
+import f2 from '../assets/f2.jpg'
 // Team images
 import gowtham from "../assets/gowtham.jpg";
 import yohitha from "../assets/yohitha.jpg";
@@ -63,8 +64,8 @@ const About = () => {
             para2: "Crafting Digital Excellence:Where Ideas Become Interactive Realities!"
         },
         {
-            fimg: f1,
-            para1: "Web Development",
+            fimg: f2,
+            para1: "Admin Panel Creation",
             para2: "Crafting Digital Excellence:Where Ideas Become Interactive Realities!"
         },
         {
@@ -114,10 +115,12 @@ const About = () => {
                         <div className="space-x-4 lg:grid lg:grid-cols-3 lg:grid-flow-row ml-14 mr-12 mt-12">
                             {features.map((f) => (
                                 <>
-                                    <div className="sm: border-2 lg:border-none   lg:mt-7">
-                                        <img className="w-24 h-24 rounded-full" src={f.fimg} />
-                                        <h1>{f.para1}</h1>
-                                        <p><q>{f.para2}</q></p>
+                                    <div className="sm: border-2 lg:border-none    lg:mt-7">
+                                        <div className="flex flex-row">
+                                            <img className="w-24 h-24 rounded-full" src={f.fimg} />
+                                            <h1 className="mt-2 ml-4"><span className="text-gold-0 ">{f.para1}</span> <br />{f.para2}</h1>
+                                            {/* <p><q>{f.para2}</q></p> */}
+                                        </div>
                                     </div >
                                 </>
                             ))}
@@ -126,7 +129,7 @@ const About = () => {
 
                     {/* Features end */}
 
-                    <h1 className="border-b-2 text-gold-0 font-semibold mt-12"></h1>
+                    <h1 className="border-b-2 text-gold-0 font-semibold mt-16"></h1>
 
                     {/* Team Mates Card */}
                     <div>
@@ -139,7 +142,7 @@ const About = () => {
                         <div className='sm:p-3 lg:space-x-6 lg:grid lg:grid-cols-4 lg:grid-flow-row lg:p-20 lg:animate-fade-in-up'>
                             {data.map((d, index) => (
                                 <div key={index} className='border-8 border-textcolor-0 w-fit rounded-bl-2xl rounded-tr-2xl mt-10 ease-in-out delay-150 bg-blue-500 hover:-translate-y-0 hover:scale-110 hover:bg-indigo-500 duration-300 transform transition-all'>
-                                    <img className="p-2" src={d.img} alt={`Team member ${index + 1}`} />
+                                    <img className="p-2 image grayscale hover:grayscale-0 transition duration-300" src={d.img} alt={`Team member ${index + 1}`} />
                                     <h1 className="border-b-2 w-12"></h1>
                                     <p className="text-center mb-2">{d.heading}</p>
                                 </div>
