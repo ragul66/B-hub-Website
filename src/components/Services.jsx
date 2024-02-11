@@ -54,8 +54,8 @@ const Services = () => {
 
 const ServiceItem = ({ imgSrc, imgAlt, description }) => {
   return (
-    <div className="service-item animate-fade-in-up space-y-6">
-      <img className="service-item-image" src={imgSrc} alt={imgAlt} />
+    <div className="service-item animate-fade-in-up space-y-6 ">
+      <img className="service-item-image hover:-translate-y-0 hover:scale-110 hover:bg-indigo-500 duration-300 transform transition-all" src={imgSrc} alt={imgAlt} />
       <p className="service-item-description">{description}</p>
     </div>
   );

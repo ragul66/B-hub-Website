@@ -56,6 +56,7 @@ export default {
       background: ["#1E2125"],
       textcolor: ["#E9DFCE"],
       button: ["#FFFFFF"],
+      gold: ["#DAA520"],
     },
     fontFamily: {
       primary: ["Poppins", "sans-serif"],
