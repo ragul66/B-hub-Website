@@ -1,6 +1,7 @@
 // import React from 'react'
 import Marquee from "react-fast-marquee";
 import Header from '../components/Header'
+import about from '../assets/About.jpg'
 // Team images
 import gowtham from "../assets/gowtham.jpg";
 import yohitha from "../assets/yohitha.jpg";
@@ -59,9 +60,13 @@ const About = () => {
             <div className='text-textcolor-0 bg-background-0 w-full h-max'>
                 <Header />
                 <div className='font-primary'>
-                    <h1 className='mt-12 text-[25px] text-center'><q>Elevate Your Digital Future with Our IT Expertise</q></h1>
-                    <h1 className='text-[80px] text-center mt-36'>We Are Creative And Phenomenal</h1>
-                    <p className=' text-center text-[20px] ml-2 mr-2'><q>At B-Hub, we offer a range of professional services to meet various digital needs. We specialize in Web designing, Web development, and UI/UX design, combining creativity and technical skills to <br /> create visually appealing and highly functional solutions. Our expertise also extends to media works, where we focus on producing impactful visual content. Additionally, we actively collaborate on college projects, supporting the educational and professional growth of students. Whether you need a beautiful website, a seamless user experience, compelling media content, or assistance with academic projects, our dedicated team is committed to exceeding expectations and delivering excellence in every project.</q></p>
+
+                    <h1 className='lg:mt-16 text-[25px] text-center'><q>Elevate Your Digital Future with Our IT Expertise</q></h1>
+                    <div className="sm:flex sm:flex-col lg:flex lg:flex-row">
+                        <img className="sm:ml-4 lg:ml-12 lg:mt-36 sm:w-72 sm:h-32 lg:w-fit lg:h-fit animate-fade-in-up" src={about} alt="image" />
+
+                        <p className='sm:ml-12 lg:ml-12 lg:mt-40  lg:mr-2 animate-fade-in-up'><span className="text-button-0 text-[20px]"><q>We are Creative and Phenomenol</q></span><br />At B-Hub, we offer a range of professional services to meet various digital needs. We specialize in Web designing, Web development, and UI/UX design, combining creativity and technical skills to <br /> create visually appealing and highly functional solutions. Our expertise also extends to media works, where we focus on producing impactful visual content. Additionally, we actively collaborate on college projects, supporting the educational and professional growth of students. Whether you need a beautiful website, a seamless user experience, compelling media content, or assistance with academic projects, our dedicated team is committed to exceeding expectations and delivering excellence in every project.</p>
+                    </div>
 
                     <div>
                         <Marquee speed={300} gradient={false} className="mt-[125px] text-[100px]">
@@ -80,10 +85,10 @@ const About = () => {
                         <div>
                             <p className='text-center text-[30px] ml-12 mt-12 animate-fade-up'>Create Positive Goals in your life & <br /> reach them as happy as you can</p>
                         </div>
-                        <h1 className="border-b-2 text-textcolor-0"></h1>
+                        {/* <h1 className="border-b-2 text-textcolor-0"></h1> */}
                         <h1 className='text-center text-[70px] mt-4'>Our Team</h1>
 
-                        <div className='space-x-6 grid grid-cols-4 grid-flow-row p-20 animate-fade-in-up'>
+                        <div className='sm:p-3 lg:space-x-6 lg:grid lg:grid-cols-4 lg:grid-flow-row lg:p-20 lg:animate-fade-in-up'>
                             {data.map((d, index) => (
                                 <div key={index} className='border-8 border-textcolor-0 w-fit rounded-bl-2xl rounded-tr-2xl mt-8 ease-in-out delay-150 bg-blue-500 hover:-translate-y-0 hover:scale-110 hover:bg-indigo-500 duration-300 transform transition-all'>
                                     <img className="p-2" src={d.img} alt={`Team member ${index + 1}`} />
@@ -114,7 +119,7 @@ const About = () => {
 
 
                 </div>
-            </div>
+            </div >
         </>
     )
 }

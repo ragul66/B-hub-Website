@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
     return (
         <>
-            <div className='lg:w-screen lg:h-max text-textcolor-0'>Footer</div>
+            <div className='lg:w-screen lg:mr-0  text-textcolor-0'>Footer</div>
         </>
     )
 }
