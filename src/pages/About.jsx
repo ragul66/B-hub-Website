@@ -1,6 +1,5 @@
 // import React from 'react'
-import Marquee from "react-fast-marquee";
-import Header from '../components/Header'
+import Navbar from '../components/Navbar';
 import about from '../assets/About.jpg'
 import f1 from '../assets/f1.jpg'
 import f2 from '../assets/f2.jpg'
@@ -93,9 +92,8 @@ const About = () => {
     return (
         <>
             <div className='text-textcolor-0 bg-background-0 w-full h-max'>
-                <Header />
+                <Navbar />
                 <div className='font-primary'>
-
                     <h1 className='lg:mt-16 text-[25px] text-center'><q>Elevate Your Digital Future with Our IT Expertise</q></h1>
                     <div className="sm:flex sm:flex-col lg:flex lg:flex-row ">
                         <img className="sm:ml-4 lg:ml-12 lg:mt-36 sm:w-72 sm:h-32 lg:w-fit lg:h-fit animate-fade-in-up border-4 hover:shadow-gold-0 hover:cursor-pointer text-gold-0 hover:-translate-y-0 hover:scale-110 hover:bg-indigo-500 duration-300 transform transition-all" src={about} alt="image" />
@@ -117,11 +115,10 @@ const About = () => {
                                 <>
                                     <div className="sm: border-2 lg:border-none    lg:mt-7">
                                         <div className="flex flex-row">
-                                            <img className="w-24 h-24 rounded-full" src={f.fimg} />
-                                            <h1 className="mt-2 ml-4"><span className="text-gold-0 ">{f.para1}</span> <br />{f.para2}</h1>
-                                            {/* <p><q>{f.para2}</q></p> */}
+                                            <img className="w-20 h-20 rounded-full" src={f.fimg} />
+                                            <h1 className="mt-4 ml-4"><span className="text-gold-0 ">{f.para1}</span> <br /><q>{f.para2}</q></h1>
                                         </div>
-                                    </div >
+                                    </div>
                                 </>
                             ))}
                         </div>
@@ -141,7 +138,7 @@ const About = () => {
 
                         <div className='sm:p-3 lg:space-x-6 lg:grid lg:grid-cols-4 lg:grid-flow-row lg:p-20 lg:animate-fade-in-up'>
                             {data.map((d, index) => (
-                                <div key={index} className='border-8 border-textcolor-0 w-fit rounded-bl-2xl rounded-tr-2xl mt-10 ease-in-out delay-150 bg-blue-500 hover:-translate-y-0 hover:scale-110 hover:bg-indigo-500 duration-300 transform transition-all'>
+                                <div key={index} className='border-8 border-textcolor-0  rounded-bl-2xl rounded-tr-2xl mt-10 ease-in-out delay-150 bg-blue-500 hover:-translate-y-0 hover:scale-110 hover:bg-indigo-500 duration-300 transform transition-all'>
                                     <img className="p-2 image grayscale hover:grayscale-0 transition duration-300" src={d.img} alt={`Team member ${index + 1}`} />
                                     <h1 className="border-b-2 w-12"></h1>
                                     <p className="text-center mb-2">{d.heading}</p>
