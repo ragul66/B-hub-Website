@@ -1,8 +1,10 @@
 import Carousel from "../components/Carousel";
-// import Footer from "../components/Footer";
+import Footer from "../components/Footer";
+import MovingText from "../components/MovingText";
 import Navbar from "../components/Navbar";
 import Services from "../components/Services";
 import Title from "../components/Title";
+import TypingText from "../components/TypingText";
 import Whatsapp from "../components/Whatsapp";
 
 const Home = () => {
@@ -12,9 +14,11 @@ const Home = () => {
         <Navbar />
         <Title />
         <Services />
-        <Whatsapp />
+        <TypingText />
+        <MovingText />
         <Carousel />
-        {/* <Footer /> */}
+        <Footer />
+        <Whatsapp />
       </div>
     </>
   );

@@ -1,175 +1,100 @@
-// import React from 'react'
-import Navbar from '../components/Navbar';
-import about from '../assets/About.jpg'
-import f1 from '../assets/f1.jpg'
-import f2 from '../assets/f2.jpg'
-// Team images
-import gowtham from "../assets/gowtham.jpg";
-import yohitha from "../assets/yohitha.jpg";
-import sree from "../assets/sree.jpg";
-import Aravindh from "../assets/ARAVIND.jpg";
-import Ragul from "../assets/Ragul.jpg";
-import webd from "../assets/ARAVIND.jpg";
-import kannadiyar from "../assets/kannadiyar.png";
-
+import React from "react";
+import Navbar from "../components/Navbar";
+import TeamMember from "../components/TeamMember";
+import ProjectImage from "../components/ProjectImage";
+import Feature from "../components/Feature";
+import aboutImage from "../assets/About.jpg";
+import f1Image from "../assets/f1.jpg";
+import f2Image from "../assets/f2.jpg";
+import gowthamImage from "../assets/gowtham.jpg";
+import yohithaImage from "../assets/yohitha.jpg";
+import sreeImage from "../assets/sree.jpg";
+import AravindhImage from "../assets/ARAVIND.jpg";
+import RagulImage from "../assets/Ragul.jpg";
+import webdImage from "../assets/ARAVIND.jpg";
+import kannadiyarImage from "../assets/kannadiyar.png";
 
 const About = () => {
+  // Team members data
+  const teamMembers = [
+    { img: gowthamImage, heading: "Gowtham Raj.S" },
+    { img: yohithaImage, heading: "Yohitha.S" },
+    { img: sreeImage, heading: "Sree Aranganathan.D" },
+    { img: AravindhImage, heading: "Aravindhan.U.D" },
+    { img: RagulImage, heading: "Ragul vasanth.S.M" },
+    { img: webdImage, heading: "Ragul vasanth" },
+    { img: webdImage, heading: "Ragul vasanth" },
+    { img: webdImage, heading: "Ragul vasanth" },
+  ];
 
-    const data = [
-        {
-            img: gowtham,
-            heading: "Gowtham Raj.S"
-        },
-        {
-            img: yohitha,
-            heading: "Yohitha.S"
-        },
-        {
-            img: sree,
-            heading: "Sree Aranganathan.D"
-        },
-        {
-            img: Aravindh,
-            heading: "Aravindhan.U.D"
-        },
-        {
-            img: Ragul,
-            heading: "Ragul vasanth.S.M"
-        },
-        {
-            img: webd,
-            heading: "Ragul vasanth"
-        },
-        {
-            img: webd,
-            heading: "Ragul vasanth"
-        },
-        {
-            img: webd,
-            heading: "Ragul vasanth"
-        }
-    ]
+  // Project data
+  const projects = [{ image: kannadiyarImage }];
 
-    const project = [
-        {
-            image: kannadiyar
-        }
-    ]
+  // Features data
+  const features = [
+    {
+      fimg: f1Image,
+      para1: "Web Development",
+      para2:
+        "Crafting Digital Excellence:Where Ideas Become Interactive Realities!",
+    },
+    {
+      fimg: f2Image,
+      para1: "Admin Panel Creation",
+      para2:
+        "Crafting Digital Excellence:Where Ideas Become Interactive Realities!",
+    },
+    // Add more features as needed
+  ];
 
-    const features = [
-        {
-            fimg: f1,
-            para1: "Web Development",
-            para2: "Crafting Digital Excellence:Where Ideas Become Interactive Realities!"
-        },
-        {
-            fimg: f2,
-            para1: "Admin Panel Creation",
-            para2: "Crafting Digital Excellence:Where Ideas Become Interactive Realities!"
-        },
-        {
-            fimg: f1,
-            para1: "Web Development",
-            para2: "Crafting Digital Excellence:Where Ideas Become Interactive Realities!"
-        },
-        {
-            fimg: f1,
-            para1: "Web Development",
-            para2: "Crafting Digital Excellence:Where Ideas Become Interactive Realities!"
-        },
-        {
-            fimg: f1,
-            para1: "Web Development",
-            para2: "Crafting Digital Excellence:Where Ideas Become Interactive Realities!"
-        },
-        {
-            fimg: f1,
-            para1: "Web Development",
-            para2: "Crafting Digital Excellence:Where Ideas Become Interactive Realities!"
-        }
-    ]
+  return (
+    <div className="text-textcolor-0 bg-background-0 w-full min-h-screen">
+      <Navbar />
+      <div className="container mx-auto py-12">
+        <section className="text-center mb-12">
+          <img
+            src={aboutImage}
+            alt="About Us"
+            className="mx-auto max-w-xs sm:max-w-none"
+          />
+          <h2 className="text-3xl font-bold mt-6">
+            Elevate Your Digital Future with Our IT Expertise
+          </h2>
+          <p className="mt-4">
+            "At B-Hub, we offer a range of professional services to meet various
+            digital needs..."
+          </p>
+        </section>
 
-    return (
-        <>
-            <div className='text-textcolor-0 bg-background-0 w-full h-max'>
-                <Navbar />
-                <div className='font-primary'>
-                    <h1 className='lg:mt-16 text-[25px] text-center'><q>Elevate Your Digital Future with Our IT Expertise</q></h1>
-                    <div className="sm:flex sm:flex-col lg:flex lg:flex-row ">
-                        <img className="sm:ml-4 lg:ml-12 lg:mt-36 sm:w-72 sm:h-32 lg:w-fit lg:h-fit animate-fade-in-up border-4 hover:shadow-gold-0 hover:cursor-pointer text-gold-0 hover:-translate-y-0 hover:scale-110 hover:bg-indigo-500 duration-300 transform transition-all" src={about} alt="image" />
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold mb-6">Awesome Features</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {features.map((feature, index) => (
+              <Feature key={index} feature={feature} />
+            ))}
+          </div>
+        </section>
 
-                        <p className='sm:ml-12 lg:ml-12 lg:mt-44 translate-y-6 lg:mr-2 animate-fade-in-up'><span className="text-button-0 text-[20px] font-semibold"><q>We are Creative and Phenomenol</q></span><br />At B-Hub, we offer a range of professional services to meet various digital needs. We specialize in Web designing, Web development, and UI/UX design, combining creativity and technical skills to create visually appealing and highly functional solutions. Our expertise also extends to media works, where we focus on producing impactful visual content. Additionally, we actively collaborate on college projects, supporting the educational and professional growth of students. Whether you need a beautiful website, a seamless user experience, compelling media content, or assistance with academic projects, our dedicated team is committed to exceeding expectations and delivering excellence in every project.</p>
-                    </div>
-                    <h1 className="border-b-2 text-gold-0 font-semibold mt-40"></h1>
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold mb-6">Our Team</h2>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+            {teamMembers.map((member, index) => (
+              <TeamMember key={index} member={member} />
+            ))}
+          </div>
+        </section>
 
-                    {/* Features start  */}
-                    <div>
-                        <div>
-                            <h1 className="lg:text-[30px] lg:text-center lg:mt-4">AWESOME FEATURES</h1>
-                            <h1 className="border-b-2 w-32 ml-[700px] text-gold-0 font-semibold"></h1>
-                            <p className="text-center mt-3">"Beyond Expectations, Beyond Services: Crafting Excellence for You."</p>
-                        </div>
+        <section>
+          <h2 className="text-3xl font-bold mb-6">Projects</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {projects.map((project, index) => (
+              <ProjectImage key={index} project={project} />
+            ))}
+          </div>
+        </section>
+      </div>
+    </div>
+  );
+};
 
-                        <div className="space-x-4 lg:grid lg:grid-cols-3 lg:grid-flow-row ml-14 mr-12 mt-12">
-                            {features.map((f) => (
-                                <>
-                                    <div className="sm: border-2 lg:border-none    lg:mt-7">
-                                        <div className="flex flex-row">
-                                            <img className="w-20 h-20 rounded-full" src={f.fimg} />
-                                            <h1 className="mt-4 ml-4"><span className="text-gold-0 ">{f.para1}</span> <br /><q>{f.para2}</q></h1>
-                                        </div>
-                                    </div>
-                                </>
-                            ))}
-                        </div>
-                    </div>
-
-                    {/* Features end */}
-
-                    <h1 className="border-b-2 text-gold-0 font-semibold mt-16"></h1>
-
-                    {/* Team Mates Card */}
-                    <div>
-                        <div>
-                            <h1 className='text-center text-[40px] mt-4'>Our Team</h1>
-                            <h1 className="border-b-2 w-32 ml-[700px] text-gold-0 font-semibold"></h1>
-                            <p className='text-center  ml-12 mt-3 animate-fade-up'>"Where Collaboration Creates Brilliance, Together We Achieve the Extraordinary!"</p>
-                        </div>
-
-                        <div className='sm:p-3 lg:space-x-6 lg:grid lg:grid-cols-4 lg:grid-flow-row lg:p-20 lg:animate-fade-in-up'>
-                            {data.map((d, index) => (
-                                <div key={index} className='border-8 border-textcolor-0  rounded-bl-2xl rounded-tr-2xl mt-10 ease-in-out delay-150 bg-blue-500 hover:-translate-y-0 hover:scale-110 hover:bg-indigo-500 duration-300 transform transition-all'>
-                                    <img className="p-2 image grayscale hover:grayscale-0 transition duration-300" src={d.img} alt={`Team member ${index + 1}`} />
-                                    <h1 className="border-b-2 w-12"></h1>
-                                    <p className="text-center mb-2">{d.heading}</p>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-
-                    {/* Team Mates Card Ends */}
-
-                    <h1 className="border-b-2 text-gold-0 font-semibold mt-12"></h1>
-
-                    {/* Projects section starts */}
-                    <div>
-                        <h1 className='text-center text-[70px]'>Projects</h1>
-                        {(project.map((j) => (
-                            <>
-                                <div>
-                                    <img className=" mt-12 ml-[700px]" src={j.image} />
-                                </div>
-                            </>
-                        )))}
-
-                    </div>
-                    {/* Project Section Ends */}
-
-
-                </div>
-            </div >
-        </>
-    )
-}
-
-export default About
+export default About;

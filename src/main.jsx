@@ -18,16 +18,17 @@ const router = createBrowserRouter([
     element: <HomePage />,
   },
   {
+    path: "/about",
+    element: <About />,
+  },
+  {
+    path: "/contact",
+    element: <Contact />,
+  },
+  {
     path: "*",
     element: <NoPage />,
   },
-  {
-    path: "/About",
-    element: <About />
-  }, {
-    path: "/Contact",
-    element: <Contact />
-  }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

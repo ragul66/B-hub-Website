@@ -2,19 +2,13 @@ import webd from "../assets/webd.jpg";
 import adminimg from "../assets/adminimg.png";
 import mediaimg from "../assets/mediaimg.webp";
 import contentimg from "../assets/contentimg.jpg";
-// import f1 from '../assets/f1.jpg'
-import '../index.css'
 
 const Services = () => {
-
-
   return (
     <div className="container">
-
       <div className="title lg:text-6xl lg:text-textcolor-0 lg:text-center lg:-mt-48 lg:text-[70px] lg:mb-48">
         Services Provided
       </div>
-
 
       <div className="service-items-container">
         <ServiceItem
@@ -60,14 +54,17 @@ const Services = () => {
 const ServiceItem = ({ imgSrc, imgAlt, description }) => {
   return (
     <div className="service-item animate-fade-in-up space-y-6 ">
-      <img className="service-item-image hover:-translate-y-0 hover:scale-110 hover:bg-indigo-500 duration-300 transform transition-all" src={imgSrc} alt={imgAlt} />
+      <img
+        className="service-item-image hover:-translate-y-0 hover:scale-110 hover:bg-indigo-500 duration-300 transform transition-all"
+        src={imgSrc}
+        alt={imgAlt}
+      />
       <p className="service-item-description">{description}</p>
     </div>
   );
 };
 
 export default Services;
-
 
 // import webd from "../assets/webd.jpg";
 // import adminimg from "../assets/adminimg.png";

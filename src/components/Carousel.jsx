@@ -32,11 +32,16 @@ const Carousel = () => {
     <div className="relative w-full lg:mt-48">
       <div onClick={updateContent}>
         <div className="aspect-w-3 aspect-h-2">
-          <img
-            src={images[currentImageIndex]}
-            alt={`Image ${currentImageIndex + 1}`}
-            className="object-cover w-full h-full absolute cursor-pointer"
-          />
+          {images.map((image, index) => (
+            <img
+              key={index}
+              src={image}
+              alt={`Image ${index + 1}`}
+              className={`object-cover w-full h-full absolute transition-opacity duration-500 ${
+                index === currentImageIndex ? "opacity-100" : "opacity-0"
+              }`}
+            />
+          ))}
         </div>
         <div className="relative w-full h-[520px] flex items-center justify-center">
           <div className="w-full px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20">
@@ -49,8 +54,9 @@ const Carousel = () => {
           <span
             key={index}
             onClick={() => switchImage(index)}
-            className={`w-3 h-3 rounded-full z-20 cursor-pointer hover:bg-background-0 ${index === currentImageIndex ? "bg-background-0" : "bg-textcolor-0"
-              }`}
+            className={`w-3 h-3 rounded-full z-20 cursor-pointer hover:bg-background-0 ${
+              index === currentImageIndex ? "bg-background-0" : "bg-textcolor-0"
+            }`}
           ></span>
         ))}
       </div>
