@@ -136,10 +136,10 @@ const About = () => {
                             <p className='text-center  ml-12 mt-3 animate-fade-up'>"Where Collaboration Creates Brilliance, Together We Achieve the Extraordinary!"</p>
                         </div>
 
-                        <div className='sm:p-3 lg:space-x-6 lg:grid lg:grid-cols-4 lg:grid-flow-row lg:p-20 lg:animate-fade-in-up'>
+                        <div className='sm:p-3 lg:space-x-6 lg:grid lg:grid-cols-4 lg:grid-flow-row lg:p-40 lg:animate-fade-in-up -mt-24'>
                             {data.map((d, index) => (
                                 <div key={index} className='border-8 border-textcolor-0  rounded-bl-2xl rounded-tr-2xl mt-10 ease-in-out delay-150 bg-blue-500 hover:-translate-y-0 hover:scale-110 hover:bg-indigo-500 duration-300 transform transition-all'>
-                                    <img className="p-2 image grayscale hover:grayscale-0 transition duration-300" src={d.img} alt={`Team member ${index + 1}`} />
+                                    <img className="p-2  transition duration-300" src={d.img} alt={`Team member ${index + 1}`} />
                                     <h1 className="border-b-2 w-12"></h1>
                                     <p className="text-center mb-2">{d.heading}</p>
                                 </div>
@@ -152,7 +152,7 @@ const About = () => {
                     <h1 className="border-b-2 text-gold-0 font-semibold mt-12"></h1>
 
                     {/* Projects section starts */}
-                    <div>
+                    {/* <div>
                         <h1 className='text-center text-[70px]'>Projects</h1>
                         {(project.map((j) => (
                             <>
@@ -162,7 +162,7 @@ const About = () => {
                             </>
                         )))}
 
-                    </div>
+                    </div> */}
                     {/* Project Section Ends */}
 
 

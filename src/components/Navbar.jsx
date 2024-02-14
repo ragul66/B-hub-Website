@@ -95,9 +95,13 @@ function Navbar() {
     document.body.style.overflow = "auto";
   };
 
+  const handlehome = () => {
+    navigate('/home')
+  }
+
   return (
     <div className="relative">
-      <div className="bg-textcolor-0 sm:w-full sm:rounded-b-[100px] text-background-0 sm:h-8 sm:text-center lg:bg-header-bg lg:w-[100%] lg:h-16 lg:text-[22px] lg:text-center ">
+      <div className="bg-textcolor-0 sm:w-full sm:rounded-b-[100px] font-primary text-background-0 sm:h-8 sm:text-center lg:bg-header-bg lg:w-[100%] lg:h-16 lg:text-[22px] lg:text-center ">
         <p>
           <q>Strive not to be a success, but rather to be of value.</q>
         </p>
@@ -113,7 +117,14 @@ function Navbar() {
         className={`overlay fixed top-0 left-0 w-full bg-black bg-opacity-90 overflow-hidden transition-all duration-500 ${isNavOpen ? "h-full" : "h-0"
           }`}
       >
-        <div className="bg-textcolor-0 text-background-0 rounded-b-[100px] overlay-content flex flex-col items-center justify-center h-5/6">
+        <div className="bg-textcolor-0 text-[50px] font-primary text-background-0 rounded-b-[100px] overlay-content flex flex-col items-center justify-center h-5/6">
+          <a
+            href="#"
+            className="block py-2 text-gray-300 hover:text-white transition-colors duration-300"
+            onClick={handlehome}
+          >
+            Home
+          </a>
           <a
             href="#"
             className="block py-2 text-gray-300 hover:text-white transition-colors duration-300"
@@ -125,20 +136,14 @@ function Navbar() {
             href="#"
             className="block py-2 text-gray-300 hover:text-white transition-colors duration-300"
           >
-            Services
+            Contact
           </a>
-          <a
-            href="#"
-            className="block py-2 text-gray-300 hover:text-white transition-colors duration-300"
-          >
-            Clients
-          </a>
-          <a
+          {/* <a
             href="#"
             className="block py-2 text-gray-300 hover:text-white transition-colors duration-300"
           >
             Contact
-          </a>
+          </a> */}
         </div>
       </div>
     </div>

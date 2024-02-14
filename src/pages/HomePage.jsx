@@ -1,4 +1,4 @@
-import Carousel from "../components/Carousel";
+// import Carousel from "../components/Carousel";
 // import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Services from "../components/Services";
@@ -13,7 +13,7 @@ const Home = () => {
         <Title />
         <Services />
         <Whatsapp />
-        <Carousel />
+        {/* <Carousel /> */}
         {/* <Footer /> */}
       </div>
     </>

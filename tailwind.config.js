@@ -60,7 +60,7 @@ export default {
       // gold: ["#214559"],
     },
     fontFamily: {
-      primary: ["Poppins", "sans-serif"],
+      primary: ["Courgette", "cursive"],
     },
     plugins: [],
   },
