@@ -91,7 +91,7 @@ const Services = () => {
         <h1>Portfolio</h1>
       </Marquee>
 
-      <div className="title lg:text-6xl lg:text-center lg:mt-36 lg:text-[70px] lg:mb-48">
+      <div className="title text-[30px] text-center mt-24 lg:text-6xl lg:text-center lg:mt-36 lg:text-[70px] lg:mb-48">
         Services Provided
       </div>
 
