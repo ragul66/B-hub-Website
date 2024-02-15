@@ -86,8 +86,8 @@ import Marquee from "react-fast-marquee";
 
 const Services = () => {
   return (
-    <div className="container service lg:text-textcolor-0 font-primary">
-      <Marquee speed={300} className="-mt-48 text-[300px]">
+    <div className="container service text-textcolor-0 lg:text-textcolor-0 font-primary">
+      <Marquee speed={150} className="text-[150px] mt-60 lg:-mt-48 lg:text-[300px]">
         <h1>Portfolio</h1>
       </Marquee>
 
