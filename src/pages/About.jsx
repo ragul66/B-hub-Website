@@ -138,7 +138,7 @@ const About = () => {
 
                         <div className='sm:p-3 lg:space-x-6 lg:grid lg:grid-cols-4 lg:grid-flow-row lg:p-40 lg:animate-fade-in-up -mt-24'>
                             {data.map((d, index) => (
-                                <div key={index} className='border-8 border-textcolor-0  rounded-bl-2xl rounded-tr-2xl mt-10 ease-in-out delay-150 bg-blue-500 hover:-translate-y-0 hover:scale-110 hover:bg-indigo-500 duration-300 transform transition-all'>
+                                <div key={index} className='border-8 border-textcolor-0 grayscale hover:grayscale-0  rounded-bl-2xl rounded-tr-2xl mt-10 ease-in-out delay-150 bg-blue-500 hover:-translate-y-0 hover:scale-110 hover:bg-indigo-500 duration-300 transform transition-all'>
                                     <img className="p-2  transition duration-300" src={d.img} alt={`Team member ${index + 1}`} />
                                     <h1 className="border-b-2 w-12"></h1>
                                     <p className="text-center mb-2">{d.heading}</p>
