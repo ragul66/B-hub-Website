@@ -22,10 +22,10 @@ const router = createBrowserRouter([
     element: <NoPage />,
   },
   {
-    path: "/About",
+    path: "/about",
     element: <About />
   }, {
-    path: "/Contact",
+    path: "/contact",
     element: <Contact />
   }
 ]);

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Hamburger from 'hamburger-react'
 
 function Navbar() {
@@ -7,23 +7,19 @@ function Navbar() {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [isOpen, setOpen] = useState(false)
 
+
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
     // Toggle body scroll
     document.body.style.overflow = isNavOpen ? "auto" : "hidden";
   };
 
-  const handleabout = () => {
-    navigate('/About');
+  const handleNavItemClick = () => {
     // Close the navigation menu after clicking on a link
     setIsNavOpen(false);
     // Restore body scroll
     document.body.style.overflow = "auto";
   };
-
-  const handlehome = () => {
-    navigate('/home')
-  }
 
   return (
     <div className="relative z-50">
@@ -33,7 +29,7 @@ function Navbar() {
         </p>
         <div className=" lg:mt-0 ">
           <button
-            className="absolute top-0 right-2 z-50 p-2 bg-white rounded-full"
+            className="absolute top-0 right-8 z-50 p-2 bg-white rounded-full"
             onClick={toggleNav}
           >
             {/* &#9660; */}
@@ -46,33 +42,28 @@ function Navbar() {
         className={`overlay fixed top-0 left-0 w-full bg-black bg-opacity-90 overflow-hidden transition-all duration-500 ${isNavOpen ? "h-full" : "h-0"
           }`}
       >
-        <div className="bg-textcolor-0 text-[25px] lg:text-[50px] font-primary text-background-0 rounded-b-[100px] overlay-content flex flex-col items-center justify-center h-5/6">
-          <a
-            href="#"
+        <div className="bg-textcolor-0 text-[25px] lg:text-[50px] font-primary text-background-0 rounded-b-[100px] overlay-content flex flex-col items-center justify-center lg:h-[700px]">
+          <Link
+            to="/home"
             className="block py-2 text-gray-300 hover:text-white transition-colors duration-300"
-            onClick={handlehome}
+            onClick={handleNavItemClick}
           >
             Home
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            to="/about"
             className="block py-2 text-gray-300 hover:text-white transition-colors duration-300"
-            onClick={handleabout}
+            onClick={handleNavItemClick}
           >
             About
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            to="/contact"
             className="block py-2 text-gray-300 hover:text-white transition-colors duration-300"
+            onClick={handleNavItemClick}
           >
             Contact
-          </a>
-          {/* <a
-            href="#"
-            className="block py-2 text-gray-300 hover:text-white transition-colors duration-300"
-          >
-            Contact
-          </a> */}
+          </Link>
         </div>
       </div>
     </div>
