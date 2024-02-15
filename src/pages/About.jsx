@@ -1,5 +1,5 @@
 // import React from 'react'
-import Navbar from '../components/Navbar';
+
 import about from '../assets/About.jpg'
 import f1 from '../assets/f1.jpg'
 import f2 from '../assets/f2.jpg'
@@ -11,6 +11,7 @@ import Aravindh from "../assets/ARAVIND.jpg";
 import Ragul from "../assets/Ragul.jpg";
 import webd from "../assets/ARAVIND.jpg";
 import kannadiyar from "../assets/kannadiyar.png";
+import Navbar from '../components/Navbar';
 
 
 const About = () => {

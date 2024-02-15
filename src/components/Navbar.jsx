@@ -27,7 +27,7 @@ function Navbar() {
 
   return (
     <div className="relative z-50">
-      <div className=" h-12 text-[15px] space-x-2 bg-textcolor-0 sm:w-full rounded-b-[20px] lg:rounded-b-[100px] font-primary text-background-0 sm:h-8 sm:text-center lg:bg-header-bg lg:w-[100%] lg:h-16 lg:text-[22px] lg:text-center ">
+      <div className=" h-12 text-[15px] space-x-2 text-center bg-textcolor-0 sm:w-full rounded-b-[20px] md:h-14 md:text-[25px] lg:rounded-b-[100px] font-primary text-background-0 sm:h-8 lg:bg-header-bg lg:w-[100%] lg:h-16 lg:text-[22px] lg:text-center ">
         <p>
           <q>Strive not to be a success, but rather to be of value.</q>
         </p>
