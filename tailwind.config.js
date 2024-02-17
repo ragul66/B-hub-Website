@@ -53,6 +53,7 @@ export default {
       },
     },
     colors: {
+      // greyscale: ["#1E2125"],
       background: ["#1E2125"],
       textcolor: ["#E9DFCE"],
       button: ["#FFFFFF"],
@@ -62,6 +63,6 @@ export default {
     fontFamily: {
       primary: ["Courgette", "cursive"],
     },
-    plugins: [],
+    plugins: [require("tailwind - scrollbar - hide")],
   },
 };

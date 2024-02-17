@@ -1,9 +1,8 @@
-import Carousel from "../components/Carousel";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Services from "../components/Services";
 import Title from "../components/Title";
-import Whatsapp from "../components/Whatsapp";
+import Share from "../components/Share";
 import Marquee from "react-fast-marquee";
 
 const Home = () => {
@@ -22,7 +21,7 @@ const Home = () => {
         <Services />
         {/* <Carousel /> */}
         <Footer />
-        <Whatsapp />
+        <Share />
       </div>
     </>
   );

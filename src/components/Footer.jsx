@@ -1,13 +1,6 @@
 import { useNavigate } from "react-router-dom";
-import Whatsapp from "./Whatsapp";
 import TypingText from "./TypingText";
-import {
-    FaWhatsapp,
-    FaInstagram,
-    FaYoutube,
-    FaLinkedinIn,
-} from "react-icons/fa";
-import { FiMail } from "react-icons/fi";
+
 
 const Footer = () => {
     const navigate = useNavigate();
@@ -26,8 +19,8 @@ const Footer = () => {
                     </div>
                     <p className="flex flex-col text-9xl  -mb-14">something</p>
                 </div>
-                <p className="text-[200px] justify-center flex mt-2">MEANINGFUL</p>
-                <div className="flex flex-row justify-center text-[60px] -mt-20">
+                <p className=" lg:text-[150px] justify-center flex mt-6">MEANINGFUL</p>
+                <div className="flex flex-row justify-center text-[60px] -mt-14">
                     <p className="font-bold">TOGETHER</p>
                     <p className="font-extralight flex flex-row">
                         (<TypingText text={"but not Forever"} />)
@@ -40,17 +33,12 @@ const Footer = () => {
             >
                 Contact Us
             </button>
-            <div className="text-textcolor-0 flex flex-row gap-4 p-4 mt-24">
-                <FaInstagram size={24} />
-                <FaLinkedinIn size={24} />
-                <FaWhatsapp size={24} />
-                <FaYoutube size={24} />
-                <FiMail size={24} />
+            <div className="text-textcolor-0 flex flex-row gap-4 p-4 mt-24 justify-center">
+
                 <p className="text-sm text-center font-primary">
                     @ B-Hub Consultancy & Services 2024
                 </p>
             </div>
-            <Whatsapp />
         </div>
     );
 };
