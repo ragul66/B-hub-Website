@@ -53,13 +53,13 @@ function Navbar() {
               <Link
                 key={index}
                 to={path}
-                className=" block py-2 text-gray-300 hover:text-white transition-colors duration-300"
+                className="hover:animate-pulse hover:scale-125 block py-2 text-gray-300 hover:text-white transition-colors duration-300"
                 onClick={handleNavItemClick}
               >
                 {label}
               </Link>
             ))}
-            <div className="animate-bounce w-48 rounded-lg shadow-lg bg-white ring-1 ring-background-0 flex text-background-0 gap-3 p-3 bottom-0 mt-12">
+            <div className=" w-48 rounded-lg shadow-lg bg-white ring-1 ring-background-0 flex text-background-0 gap-3 p-3 bottom-0 mt-12">
               <a href="https://wa.me/8124813376" target="_blank">
                 <FaWhatsapp size={22} className="cursor-pointer hover:scale-125" />
               </a>

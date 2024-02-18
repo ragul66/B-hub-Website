@@ -46,7 +46,7 @@ const Contact = () => {
                                 <p className='text-lg font-bold'>Phone: <a href="tel:+918124813376" className="font-bold">+918124813376</a></p>
                             </div>
                         </div>
-                        <div className=" w-48 rounded-lg shadow-lg bg-white ring-1 ring-background-0 flex text-background-0 gap-3 p-3 bottom-0 right-0 mb-4 mr-3  absolute animate-bounce">
+                        <div className=" w-48 rounded-lg shadow-lg bg-white ring-1 ring-background-0 flex text-background-0 gap-3 p-3 bottom-0 right-0 mb-4 mr-3  absolute">
                             <a href="https://wa.me/8124813376" target="_blank"><FaWhatsapp
                                 size={22}
                                 className="cursor-pointer hover:scale-125"
