@@ -73,7 +73,7 @@ function Share() {
       </div >
       {
         isMenuOpen && (
-          <div className=" w-48 rounded-lg shadow-lg bg-white ring-1 ring-textcolor-0 flex text-textcolor-0 gap-3 p-3 bottom-0 mr-3  absolute -ml-52">
+          <div className="animate-bounce w-48 rounded-lg shadow-lg bg-white ring-1 ring-textcolor-0 flex text-textcolor-0 gap-3 p-3 bottom-0 mr-3  absolute -ml-52">
             <a href="https://wa.me/8124813376" target="_blank"><FaWhatsapp
               size={22}
               className="cursor-pointer hover:scale-125"

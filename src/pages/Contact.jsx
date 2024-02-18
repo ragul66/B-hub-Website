@@ -24,22 +24,29 @@ const Contact = () => {
         <>
             <div className='bg-background-0 text-textcolor-0 min-h-screen w-screen font-primary relative'>
                 <Navbar />
-                <div className='h-screen justify-center items-center'>
-                    <Marquee speed={300} className="text-[300px] z-1">
-                        <h1 className="mt-48">GetInTouch</h1>
-                    </Marquee>
+                <div className='relative h-screen justify-center items-center'>
+                    <div className=''>
+                        <Marquee speed={300} className="text-[300px] z-1">
+                            <h1 className="mt-48">GetInTouch</h1>
+                        </Marquee>
+                    </div>
+                    <div className=''>
+                        <button className='text-background-0 bg-textcolor-0 fixed top-32 left-[690px]   rounded-lg p-2 shadow-md shadow-textcolor-0 '>
+                            Start New Project
+                        </button>
+                    </div>
                 </div>
                 <div className="bg-background-0 text-textcolor-0 absolute bottom-0 left-0 w-full">
                     <div className=' ml-auto text-background-0 fixed bottom-0 left-0 w-full bg-gray-900 text-white py-6 px-8'>
                         <div className="max-w-4xl mx-auto text-background-0">
                             <h2 className="text-3xl font-bold mb-6">Contact Us</h2>
-                            <p className="text-lg mb-4">Feel free to get in touch with us for any inquiries or feedback.</p>
+                            <p className="text-lg ">Feel free to get in touch with us for any inquiries or feedback.</p>
                             <div className="text-sm">
-                                <p className="font-bold">Email: <a href="mailto:contact@example.com" className="">bhubconsultancy@gmail.com</a></p>
-                                <p>Phone: <a href="tel:+1234567890" className="font-bold">+918124813376</a></p>
+                                <p className="font-bold text-lg">Email: <a href="mailto:bhubconsultancy@gmail.com" className="">bhubconsultancy@gmail.com</a></p>
+                                <p className='text-lg font-bold'>Phone: <a href="tel:+918124813376" className="font-bold">+918124813376</a></p>
                             </div>
                         </div>
-                        <div className=" w-48 rounded-lg shadow-lg bg-white ring-1 ring-background-0 flex text-background-0 gap-3 p-3 bottom-0 right-0 mb-4 mr-3  absolute">
+                        <div className=" w-48 rounded-lg shadow-lg bg-white ring-1 ring-background-0 flex text-background-0 gap-3 p-3 bottom-0 right-0 mb-4 mr-3  absolute animate-bounce">
                             <a href="https://wa.me/8124813376" target="_blank"><FaWhatsapp
                                 size={22}
                                 className="cursor-pointer hover:scale-125"

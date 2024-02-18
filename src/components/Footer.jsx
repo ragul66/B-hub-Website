@@ -36,7 +36,7 @@ const Footer = () => {
             <div className="text-textcolor-0 flex flex-row gap-4 p-4 mt-24 justify-center">
 
                 <p className="text-sm text-center font-primary">
-                    @ B-Hub Consultancy & Services 2024
+                    © B-Hub Consultancy & Services 2024
                 </p>
             </div>
         </div>
