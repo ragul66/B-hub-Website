@@ -12,6 +12,7 @@ import { FiMail } from "react-icons/fi";
 function Share() {
   const [isVisible, setIsVisible] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [recipient, setRecipient] = useState('bhubconsultancy@gmail.com');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -46,6 +47,14 @@ function Share() {
     window.open(whatsappChatURL, "_blank");
   };
 
+
+  const openGmailCompose = () => {
+    // URL for opening Gmail compose window
+    const url = `https://mail.google.com/mail/u/0/?view=cm&fs=1&to=${recipient}`;
+    // Open the Gmail compose window in a new tab
+    window.open(url, '_blank');
+  };
+
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -64,7 +73,7 @@ function Share() {
       </div >
       {
         isMenuOpen && (
-          <div className="w-48 rounded-lg shadow-lg bg-white ring-1 ring-textcolor-0 flex text-textcolor-0 gap-3 p-3 bottom-0 mr-3  absolute -ml-52">
+          <div className=" w-48 rounded-lg shadow-lg bg-white ring-1 ring-textcolor-0 flex text-textcolor-0 gap-3 p-3 bottom-0 mr-3  absolute -ml-52">
             <a href="https://wa.me/8124813376" target="_blank"><FaWhatsapp
               size={22}
               className="cursor-pointer hover:scale-125"
@@ -72,7 +81,7 @@ function Share() {
             <a href="https://www.instagram.com/bhub_2024/" target="_blank"><FaInstagram size={22} className="cursor-pointer hover:scale-125" /></a>
             <FaLinkedinIn size={22} className="cursor-pointer hover:scale-125" />
             <FaYoutube size={22} className="cursor-pointer hover:scale-125" />
-            <FiMail size={22} className="cursor-pointer hover:scale-125" />
+            <FiMail size={22} className="cursor-pointer hover:scale-125" alt="Gmail Logo" onClick={openGmailCompose} />
           </div>
         )
       }

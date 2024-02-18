@@ -63,6 +63,6 @@ export default {
     fontFamily: {
       primary: ["Courgette", "cursive"],
     },
-    plugins: [require("tailwind - scrollbar - hide")],
   },
+  plugins: [],
 };

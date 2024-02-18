@@ -8,12 +8,12 @@ import Marquee from "react-fast-marquee";
 const Home = () => {
   return (
     <>
+      <Navbar />
       <div className="bg-background-0 w-full h-full">
-        <Navbar />
         <Title />
         <Marquee
           speed={300}
-          className="-mt-48 text-[300px] service lg:text-textcolor-0 font-primary"
+          className="mt-56 text-[300px] service lg:text-textcolor-0 font-primary"
         >
           <h1>Portfolio</h1>
         </Marquee>

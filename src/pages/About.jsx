@@ -53,12 +53,6 @@ const About = () => {
         }
     ]
 
-    const project = [
-        {
-            image: kannadiyar
-        }
-    ]
-
     const features = [
         {
             fimg: f1,
@@ -94,11 +88,10 @@ const About = () => {
 
     return (
         <>
+            <Navbar />
             <div className='bg-background-0 '>
-                <div className='text-textcolor-0 bg-background-0 w-full h-max'>
-                    <Navbar />
+                <div className='text-textcolor-0 bg-background-0 h-fit w-fit'>
                     <div className='font-primary'>
-                        <h1 className='mt-12 text-center lg:mt-16 lg:text-[25px] lg:text-center'><q>Elevate Your Digital Future with Our IT Expertise</q></h1>
                         <div className="sm:flex sm:flex-col lg:flex lg:flex-row ">
                             <img className="sm:ml-4 lg:ml-12 lg:mt-36 sm:w-72 sm:h-32 p-6  lg:w-fit lg:h-fit animate-fade-in-up lg:border-2 lg:hover:shadow-gold-0 lg:hover:cursor-pointer lg:text-gold-0 hover:-translate-y-0 hover:scale-110 hover:bg-indigo-500 duration-300 transform transition-all" src={about} alt="image" />
 
@@ -154,20 +147,6 @@ const About = () => {
                         {/* Team Mates Card Ends */}
 
                         <h1 className="border-b-2 text-gold-0 font-semibold mt-12"></h1>
-
-                        {/* Projects section starts */}
-                        {/* <div>
-                        <h1 className='text-center text-[70px]'>Projects</h1>
-                        {(project.map((j) => (
-                            <>
-                                <div>
-                                    <img className=" mt-12 ml-[700px]" src={j.image} />
-                                </div>
-                            </>
-                        )))}
-
-                    </div> */}
-                        {/* Project Section Ends */}
 
 
                     </div>
