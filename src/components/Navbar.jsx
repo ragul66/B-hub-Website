@@ -16,7 +16,8 @@ function Navbar() {
   const NAV_LINKS = [
     { path: "/home", label: "Home" },
     { path: "/about", label: "About" },
-    { path: "/contact", label: "Contact" },
+    { path: "/pricing", label: "Pricing" },
+    { path: "/contact", label: "Contact" }
   ];
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);

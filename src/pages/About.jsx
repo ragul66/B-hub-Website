@@ -171,6 +171,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Share from "../components/Share";
 import Popupcard from "../components/Popupcard";
+import Slider from "../components/Slider";
 
 const About = () => {
     const [showPopup, setShowPopup] = useState(false);
@@ -215,14 +216,15 @@ const About = () => {
 
     return (
         <>
+            <Navbar />
             <div className="bg-background-0 text-textcolor-0 h-full">
-                <Navbar />
                 <Card details={teamData} togglePopup={togglePopup} />
                 <Popupcard
                     togglePopup={togglePopup}
                     showPopup={showPopup}
                     selectedCard={selectedCard}
                 />
+                <Slider />
                 <Footer />
                 <Share />
             </div>

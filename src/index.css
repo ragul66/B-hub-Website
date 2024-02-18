@@ -6,3 +6,16 @@
   width: 0;
   background: transparent;
 }
+
+:root {
+  --custom-primary-color: #ff5733;
+  --custom-secondary-color: #33ff57;
+}
+
+.text-custom-primary {
+  color: var(--custom-primary-color);
+}
+
+.text-custom-secondary {
+  color: var(--custom-secondary-color);
+}

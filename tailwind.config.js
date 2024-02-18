@@ -53,12 +53,10 @@ export default {
       },
     },
     colors: {
-      // greyscale: ["#1E2125"],
       background: ["#1E2125"],
       textcolor: ["#E9DFCE"],
       button: ["#FFFFFF"],
       gold: ["#DAA520"],
-      // gold: ["#214559"],
     },
     fontFamily: {
       primary: ["Courgette", "cursive"],
